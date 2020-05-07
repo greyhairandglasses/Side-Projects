@@ -4,13 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
   <title>Calculator</title>
 </head>
 
 <body>
+  <header>
+    <h1>Calculator</h1>
+  </header>
 
+  <main>
+
+    <div class="calc">
+      <input type="text" name="calc-screen" id="calc-screen" value="" placeholder="0">
+      <button type="button" class="calc__btn div-btn math-sign">➗</button>
+      <button type="button" class="calc__btn multi-btn math-sign">✖</button>
+      <button type="button" class="calc__btn sub-btn math-sign">➖</button>
+      <button type="button" class="calc__btn plus-btn math-sign">➕</button>
+      <button type="button" class="calc__btn nine-btn num-btn">9</button>
+      <button type="button" class="calc__btn eight-btn num-btn">8</button>
+      <button type="button" class="calc__btn seven-btn num-btn">7</button>
+      <button type="button" class="calc__btn six-btn num-btn">6</button>
+      <button type="button" class="calc__btn five-btn num-btn">5</button>
+      <button type="button" class="calc__btn four-btn num-btn">4</button>
+      <button type="button" class="calc__btn three-btn num-btn">3</button>
+      <button type="button" class="calc__btn two-btn num-btn">2</button>
+      <button type="button" class="calc__btn one-btn num-btn">1</button>
+      <button type="button" class="calc__btn zero-btn num-btn">0</button>
+      <button type="button" class="calc__btn dot-btn">.</button>
+      <button type="button" class="calc__btn c-btn">C</button>
+      <button type="button" class="calc__btn equals-btn">=</button>
+    </div>
+
+  </main>
 
   <script src="script.js"></script>
 </body>

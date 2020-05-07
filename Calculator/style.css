@@ -1,0 +1,109 @@
+* {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+html {
+  height: 100vh;
+  background:linear-gradient(45deg, rgb(67, 147, 163) 0%, rgb(67, 147, 163) 59%,rgb(93, 161, 169) 59%, rgb(93, 161, 169) 65%,rgb(119, 175, 175) 65%, rgb(119, 175, 175) 70%,rgb(145, 190, 181) 70%, rgb(145, 190, 181) 73%,rgb(171, 204, 187) 73%, rgb(171, 204, 187) 78%,rgb(197, 218, 193) 78%, rgb(197, 218, 193) 100%);
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.calc {
+  background-color: rgba(255, 255, 255, .3);
+  padding: 5px;
+  border-radius: 5px;
+  margin: auto;
+  display: grid;
+  width: 280px;
+  height: 380px;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: 
+  "scrn scrn scrn scrn"
+  "div mul sub plus"
+  "seven eight nine equals"
+  "four five six equals"
+  "one two three equals"
+  "zero dot C equals";
+  border: black solid 1px;
+}
+
+#calc-screen {
+  grid-area: scrn;
+  width: auto;
+  text-align: end;
+  padding: 10px;
+  background-color: rgba(240, 190, 74, .1);
+}
+
+::placeholder {
+  opacity: 1;
+}
+
+.calc__btn {
+  border-radius: 5px;
+  background-color: rgba(240, 190, 74, 1);
+}
+
+.div-btn {
+  grid-area: div;
+}
+.multi-btn {
+  grid-area: mul;
+}
+.sub-btn {
+  grid-area: sub;
+}
+.plus-btn {
+  grid-area: plus;
+}
+.nine-btn {
+  grid-area: nine;
+}
+.eight-btn {
+  grid-area: eight;
+}
+.six-btn {
+  grid-area: six;
+}
+.seven-btn {
+  grid-area: seven;
+}
+.five-btn {
+  grid-area: five;
+}
+.four-btn {
+  grid-area: four;
+}
+.three-btn {
+  grid-area: three;
+}
+.two-btn {
+  grid-area: two;
+}
+.one-btn {
+  grid-area: one;
+}
+.zero-btn {
+  grid-area: zero;
+}
+.dot-btn {
+  grid-area: dot;
+}
+.c-btn {
+  grid-area: C;
+} 
+.equals-btn {
+  grid-area: equals;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
