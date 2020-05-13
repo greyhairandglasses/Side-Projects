@@ -99,3 +99,11 @@ body {
       position: relative;
       z-index: 2;
     }
+
+    .unsplashLink {
+      color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+    }
