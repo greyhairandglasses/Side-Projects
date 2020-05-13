@@ -3,18 +3,21 @@ const buttons = document.querySelectorAll('.calc__btn');
 const screen = document.querySelector('#calc-screen')
 let currentSum = '';
 
+// Takes in the operator and adds that to the text string in prep for calculating
 function doTheMaths(operator) {
   currentSum += operator;
   screen.placeholder = screen.value;
   screen.value = '';
 }
 
+// Handles the the string to be evaluated
 function theEquals() {
   screen.placeholder = eval(currentSum)
   screen.value = '';
   currentSum = '';
 }
 
+// Wipes the screen back to zero and erases everything in the string to start a fresh calculation
 function theClear() {
   screen.placeholder = 0;
   screen.value = ''
@@ -44,6 +47,7 @@ function clickedBtn(e) {
   }
 }
 
+// Same functions as above essentially, just handles a keyboard button press instead of a click (Look up how to reuse/modify these functions)
 function pressedBtn(e) {
   const key = e.key;
   if (key === 'Backspace') {
@@ -65,7 +69,7 @@ function pressedBtn(e) {
     screen.value = 'Error'
   }
 }
-
+// Event listener for keyboard button presses
 window.addEventListener('keydown', pressedBtn) // e.key
 // Adds event listener to each button on the calculator
 buttons.forEach(btn => {
