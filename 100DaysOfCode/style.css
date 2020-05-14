@@ -1,0 +1,114 @@
+:root {
+  --title-font: 'Montserrat', sans-serif;
+  --main-font: 'Hind', sans-serif;
+  --white: rgba(242, 242, 242, 1);
+  --l-gray: rgba(165, 165, 165, 1);
+  --d-gray: rgba(89, 89, 89, 1);
+  --l-black: rgba(38, 38, 38, 1);
+  --black: rgba(12, 12, 12, 1);
+}
+
+
+body {
+  background-color: var(--white);
+}
+
+header {
+  height: 100vh;
+  font-family: var(--title-font);
+}
+
+.head-container {
+  display: grid;
+  color: var(--black);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 20vh;
+  grid-template-areas:
+  "." 
+  "title"
+  "sub-title"
+  "countdown"
+  "progressBar";
+  grid-template-rows: 25vh repeat(3, fit-content(800px));
+}
+
+.head-container h1 {
+  grid-area: title;
+  font-size: 5vw;
+}
+.head-container h3 {
+  grid-area: sub-title;
+  font-size: 3vw;
+}
+.head-container h6 {
+  grid-area: countdown;
+  font-size: 2vw;
+}
+.head-container progress {
+  grid-area: progressBar;
+}
+
+.header-head {
+  margin: 1vh;
+}
+
+progress {
+  margin: 50px;
+  width: 50vw;
+  appearance: none;
+  border-radius: 90px;
+  background-color: var(--white);
+  padding: 2px;
+  border: 1px solid var(--black);
+  /* box-shadow: 0px 1px 1px 1px var(--l-black); */
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 90px;
+  background-color: var(--l-black);
+}
+progress::-webkit-progress-value {
+  border-radius: 90px;
+  background-color: var(--l-black);
+}
+progress::-moz-progress-bar {
+  border-radius: 90px;
+  background-color: var(--l-black);
+}
+
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  height: 100vh;
+  width: 80vw;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: 
+  "box1 box2"
+  "box3 box4";
+}
+
+.box1 {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+}
+.box2 {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+}
+.box3 {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+}
+.box4 {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+}
