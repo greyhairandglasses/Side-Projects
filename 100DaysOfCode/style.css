@@ -14,7 +14,6 @@ body {
 }
 
 header {
-  height: 100vh;
   font-family: var(--title-font);
 }
 
@@ -24,7 +23,6 @@ header {
   justify-content: center;
   text-align: center;
   align-items: center;
-  height: 20vh;
   grid-template-areas:
   "." 
   "title"
@@ -32,6 +30,10 @@ header {
   "countdown"
   "progressBar";
   grid-template-rows: 25vh repeat(3, fit-content(800px));
+}
+
+.fade-me {
+  opacity: 100%;
 }
 
 .head-container h1 {
