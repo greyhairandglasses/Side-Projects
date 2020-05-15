@@ -25,7 +25,9 @@ function countdownPercentage(deadline) {
   const countdown = deadline - now;
   const days = Math.floor(countdown / (1000 * 60 * 60 * 24));
   const percent = 100 - days;
-  return progressBar.setAttribute('value', percent);
+  // return progressBar.setAttribute('value', percent);
+  return progressBar.value = percent;
+
 }
 
 
