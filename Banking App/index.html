@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Style/normalize.css">
+  <link rel="stylesheet" href="./Style/style.css">
+  <title>Tomzo</title>
+</head>
+
+<body>
+  <div class="login">
+    <button class="login-btn jeff" data-who="user001">LOG IN - User001</button>
+    <button class="login-btn" data-who="noAccount">LOG IN - No Account</button>
+    <p class="consolelog"></p>
+  </div>
+  <div class="phone-screen">
+    <div class="modal-outer hide-modal">
+      <div class="modal-inner">
+        <p id="close-modal" aria-label="Close Window">&times;</p>
+        <p id="modal-text">FIGURE THIS OUT</p>
+        <form>
+          <input type="text" name="vendor-input" id="vendor">
+          <input type="number" name="amount-input" id="amount">
+          <button type="submit" id="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="info-panel">
+      <h1>Please Log In</h1>
+    </div>
+
+    <div class="transaction-history">
+      <div class="transaction-heading">
+        <h6>Vendor</h6>
+        <h6>Amount</h6>
+      </div>
+      <div class="transaction-list">
+
+      </div>
+    </div>
+    <div class="menu">
+      <button class="menu-btn add-btn">Spend</button>
+      <button class="menu-btn withdraw-btn">Deposit</button>
+      <button class="menu-btn save-btn">SUPER SAVE</button>
+    </div>
+  </div>
+
+  <script src="./Script/script-take2.js" type="module"></script>
+</body>
+</body>
+
+</html>
