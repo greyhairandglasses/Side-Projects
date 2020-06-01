@@ -178,7 +178,33 @@ progress::-moz-progress-bar {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--l-blue);
-  height: 5vh;
+  height: 100px;
   margin-top: 10vh;
+}
+
+.links {
+  font-family: var(--main-font);
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--black);
+  margin: 10px;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+.links:visited {
+  color: var(--orange);
+}
+
+.divider {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: var(--d-blue);
 }
