@@ -11,6 +11,7 @@ html {
 
 .container {
   display: grid;
+  height: 100vh;
   background-color: var(--l-blue);
   grid-template-rows: 50px 50px 6fr 1fr;
 }
@@ -46,57 +47,45 @@ html {
   border-bottom: 3px solid var(--black);
 }
 
-/* Top section of the main content */
-.primary-info {
-  display: grid;
-  grid-template-columns: minmax(250px, 1fr) 3fr;
-  grid-template-areas: 
-  "info img img"
-  ". img img";
-}
-
-.info-text {
-  grid-area: info;
-  justify-content: center;
-  display: grid;
-  grid-template-areas: 
-  "info temp"
-  "type temp";
-}
-.current-info {
-  grid-area: info;
-}
-.current-temp {
-  grid-area: temp;
-}
-.current-type {
-  grid-area: type;
-}
-
-.current-img {
-  grid-area: img;
-  height: 600px;
+.weather-container {
   margin: auto;
+  border-radius: 5px;
+  background-color: var(--orange);
+  padding: 25px;
+}
+
+#weather-today {
+  margin: 0 auto;
+}
+.daily-breakdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--d-blue);
+  width: 10vw;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.daily-breakdown img {
+  background-color: rgba(0, 0, 0, .1);
+  margin: 10px;
   border-radius: 100%;
+}
+
+.current-day,
+.day-of-the-week {
+  color: var(--vl-blue);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.day-temp,
+.current-temp {
+  color: var(--vl-blue);
 }
 
 /* At the bottom of the page */
 .day-report {
   display: flex;
-}
-
-.hourly-breakdown {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--orange);
-  border-radius: 5px;
-  margin: 10px;
-}
-
-.hourly-breakdown p {
-  text-align: center;
-  color: var(--vl-blue);
-  margin: 5px;
-  
 }
