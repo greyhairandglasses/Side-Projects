@@ -10,6 +10,14 @@
 --maize-crayola: #e9c46a;
 --sandy-brown: #f4a261;
 --terra-cotta: #e76f51;
+
+--black: #2b2d42;
+--grey: #8D99AE;
+/* --white: #EDF2F433; */
+--white: #F1FAEE80;
+/* --red: #EF233C; */
+--red: #E63946;
+--dark-red: #D90429;
 }
 
 .hide-modal {
@@ -35,7 +43,7 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  background-color: var(--sandy-brown);
+  background-color: var(--grey);
   padding: 20px;
   height: 150px;
   width: 250px;
@@ -62,16 +70,16 @@
 .phone-screen {
   position: relative;
   display: grid;
-  gap: 5px;
+  gap: 15px;
   justify-items: center;
   border-radius: 5px;
   box-shadow: var(--v-high-shadow);
   border: 2px solid gray;
   padding: 10px;
-  margin: 30px auto;
+  margin: 50px auto;
   height: 700px;
   width: 400px;
-  background-color: var(--charcoal);
+  background-color: #0077B6;
   grid-template-rows: repeat(6, 1fr);
   grid-template-areas: 
   "info-panel"
@@ -85,10 +93,9 @@
 .info-panel {
   grid-area: info-panel;
   width: 90%;
-  border-radius: 5px;
   box-shadow: var(--low-shadow);
   text-align: center;
-  background-color: var(--maize-crayola);
+  background-color: var(--white);
 }
 
 .cx-info {
@@ -101,8 +108,7 @@
 
 .transaction-history {
   grid-area: transaction-history;
-  border-radius: 5px;
-  background-color: var(--maize-crayola);
+  background-color: var(--white);
   width: 90%;
   bottom: 0;
   box-shadow: var(--low-shadow);
@@ -124,7 +130,7 @@
   height: 80%;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: black white;
+  scrollbar-color: var(--black) var(--white);
 }
 
 .indivdual-trans {
@@ -134,12 +140,13 @@
 
 .menu {
   grid-area: menu;
-  background-color: var(--maize-crayola);
-  border-radius: 5px;
+  background-color: var(--white);
   display: flex;
   width: 90%;
   justify-content: space-evenly;
   align-items: center;
+  box-shadow: var(--low-shadow);
+
 }
 
 .menu-btn,
@@ -147,7 +154,13 @@
   width: 100px;
   height: 50px;
   margin: 5px;
-  border-radius: 5px;
-  box-shadow: var(--mid-shadow);
-  background-color: var(--terra-cotta);
+  border-radius: 10px;
+  box-shadow: var(--low-shadow);
+  background-color: var(--white);
+  border: 1px solid var(--black);
+}
+
+.border {
+  border-radius: 10px;
+  border: 1px solid var(--black);
 }
