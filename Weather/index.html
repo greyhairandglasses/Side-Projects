@@ -12,8 +12,11 @@
 <body>
   <div class="container">
     <div class="location-search">
-      <input class="location-search-bar" type="text" name="" id="" placeholder="Location"> <input class="location-btn"
-        type="button" value="Search">
+      <!-- <label for="country">Location:</label> -->
+      <select name="country" id="country-dropdown">
+      </select>
+      <input class="location-btn" type="button" value="Use my location">
+      <!-- <input class="location-search-bar" type="text" name="" id="" placeholder="Location">  -->
     </div>
 
     <div class="when-bar">
@@ -23,10 +26,60 @@
       <p class="when-week">7 Days</p> -->
     </div>
     <div class="weather-container">
-      <div class="primary-info info-text daily-breakdown" id="weather-today">
-        <p class="current-day">Loading...</p>
-        <p class="current-temp">Loading...</p>
-        <img src="" alt="" class="current-img">
+      <div class="today-weather-info">
+        <div class="primary-info info-text daily-breakdown" id="weather-today">
+          <p class="current-day">Loading...</p>
+          <p class="current-temp">Loading...</p>
+          <img src="" alt="" class="current-img">
+          <button class="hidden" id="today-btn">Today</button>
+        </div>
+        <div class="current-breakdown">
+          <table>
+
+            <th>Location</th>
+            <th id="location">Loading...</th>
+
+
+            <tr>
+              <td>Sunrise</td>
+              <td id="sunrise">Loading...</td>
+            </tr>
+
+            <tr>
+              <td>Sunset</td>
+              <td id="sunset">Loading...</td>
+            </tr>
+
+            <tr>
+              <td>Feels like</td>
+              <td id="feels-like">Loading...</td>
+            </tr>
+
+            <tr>
+              <td>Description</td>
+              <td id="description">Loading...</td>
+            </tr>
+
+            <tr>
+              <td>UV Index</td>
+              <td id="UV-Level">Loading...</td>
+            </tr>
+
+            <tr>
+              <td>Wind Speed</td>
+              <td id="wind-speed">Loading...</td>
+            </tr>
+
+            <tr>
+              <td>Humidity</td>
+              <td id="humidity">Loading...</td>
+            </tr>
+
+            <tr>
+
+            </tr>
+          </table>
+        </div>
       </div>
 
       <div class="day-report">

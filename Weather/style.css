@@ -24,7 +24,7 @@ html {
   background-color: var(--d-blue);
 }
 
-.location-search-bar {
+#country-dropdown {
   border: 2px solid transparent;
   border-radius: 5px;
   background-color: var(--vl-blue);
@@ -54,9 +54,8 @@ html {
   padding: 25px;
 }
 
-#weather-today {
-  margin: 0 auto;
-}
+#weather-today {}
+
 .daily-breakdown {
   display: flex;
   flex-direction: column;
@@ -71,6 +70,32 @@ html {
   background-color: rgba(0, 0, 0, .1);
   margin: 10px;
   border-radius: 100%;
+}
+
+.today-weather-info {
+  display: flex;
+  justify-content: center;
+}
+
+table, td, th {
+  margin: 10px;
+  border-collapse: collapse;
+  border: 1px black solid;
+  height: 25px;
+  width: 250px;
+  padding: 5px;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+tr:hover {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+#description {
+  text-transform: capitalize;
 }
 
 .current-day,
@@ -88,4 +113,17 @@ html {
 /* At the bottom of the page */
 .day-report {
   display: flex;
+}
+
+#today-btn {
+  background-color: var(--orange);
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--vl-blue);
+  border: none;
+  margin: 10px;
+}
+
+.hidden {
+  visibility: hidden;
 }
