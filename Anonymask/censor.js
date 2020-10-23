@@ -17,7 +17,7 @@ function changeEmoji(e) {
   }
 }
 emojiList.forEach(emoji => emoji.addEventListener('click', changeEmoji));
-emojiList.forEach(emoji => emoji.addEventListener('ontouchend', changeEmoji));
+emojiList.forEach(emoji => emoji.addEventListener('touchstart', changeEmoji));
 
 // Creates an instance of the FaceDetector
 const faceDetector = new window.FaceDetector();
